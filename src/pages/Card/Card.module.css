@@ -1,0 +1,139 @@
+.container {
+  background: transparent;
+  box-shadow: 0px 1px 3px 5px rgb(5, 5, 5, 0.5);
+  width: 40%;
+  margin: 2%;
+  border-radius: 12px;
+  border: 2px solid rgb(0, 0, 0, 0.5);
+}
+.container h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0;
+  color: white;
+  text-shadow: 2px 0 3px #000;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 0 2%;
+}
+
+.info label {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.info p {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+.address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 0 2%;
+  flex-wrap: wrap;
+}
+.address label {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.address p {
+  margin: 10px 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.aadhar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 0 2%;
+}
+.aadhar label {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.aadhar p {
+  margin: 10px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.stay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  letter-spacing: 1px;
+  margin: 0 2%;
+}
+.stay label {
+  margin: 10px 10px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.stay p {
+  margin: 10px 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+.button {
+  padding: 8px 15px;
+  margin: 20px 40px;
+  font-variant: small-caps;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: none;
+  background: rgb(11, 11, 63);
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.button:hover {
+  background: transparent;
+  color: rgb(11, 11, 63);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 90%;
+  }
+}

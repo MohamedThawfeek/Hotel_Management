@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+}
+
+.container img {
+  height: 400px;
+  object-fit: fill;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 200vw;
+  }
+  .container img {
+    height: 600px;
+    object-fit: fill;
+  }
+}

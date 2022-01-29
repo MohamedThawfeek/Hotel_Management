@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container .a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #ffd700;
+  margin: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  -webkit-box-reflect: below 0px linear-gradient(transparent, 30002);
+  transition: 0.5s;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 2px 0 3px #000;
+}
+
+.container .a:hover {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 40px #ffd700,
+    0 0 80px #ffd700, 0 0 100px #ffd700;
+}
+
+.container .a span {
+  position: relative;
+  z-index: 100;
+}
+
+.container .a::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #ffd700;
+  box-shadow: 5px -8px 0 #ffd700, 5px 8px 0 #ffd700;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5, 0s, 0s;
+}
+
+.container .a:hover::before {
+  width: 60%;
+  height: 100%;
+  left: -2px;
+  box-shadow: 5px 0 0 #ffd700, 5px 0 0 #ffd700;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.container .a::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background: #ffd700;
+  box-shadow: -5px -8px 0 #ffd700, -5px 8px 0 #ffd700;
+  transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+  transition-delay: 1s, 0.5, 0s, 0s;
+}
+
+.container .a:hover::after {
+  width: 60%;
+  height: 100%;
+  right: -2px;
+  box-shadow: -5px 0 0 #ffd700, -5px 0 0 #ffd700;
+  transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+@media (max-width: 750px) {
+  .container .a {
+    position: relative;
+    display: inline-block;
+    padding: 40px 60px;
+    border: 2px solid #ffd700;
+    margin: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, 30002);
+    transition: 0.5s;
+    text-decoration: none;
+    color: #fff;
+    text-shadow: 2px 0 3px #000;
+    text-align: center;
+  }
+}
